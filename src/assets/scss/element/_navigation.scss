@@ -1,0 +1,31 @@
+.result-per-page-{
+    &-container{
+        display: flex;
+    }
+    &-text{
+
+    }
+    &-per-page{
+        cursor: pointer;
+        padding: 0px 5px;
+    }
+    &-option-container{
+        position: fixed;
+        opacity: 0;
+        background-color: #FFFFFF;
+        max-height: 300px;
+        overflow-y: auto;
+        z-index: 10;
+    }
+    &-option-item{
+        padding: 5px 10px;
+        cursor: pointer;
+        text-align: center;
+        &:hover{
+            background-color: rgb(193, 218, 188);
+        }
+    }
+    &-total{
+        padding: 0px 5px;
+    }
+}

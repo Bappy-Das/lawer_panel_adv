@@ -1,0 +1,25 @@
+
+.dp_{
+    &_pointer {
+        cursor: pointer;
+        border-radius: 8px;
+        border: 1px solid var(--gray-4);
+    }
+    &_input{
+        font-weight: 400 !important;
+        font-size: 14px !important;
+    }
+    &_calendar_item{
+    padding: 2px !important;
+    
+    }
+    &_calendar_row{
+        margin: 2px 0 !important;
+    }
+    &_active_date{
+        background-color: var(--primary);
+    }
+}
+
+
+@import '@vuepic/vue-datepicker/dist/main.css'

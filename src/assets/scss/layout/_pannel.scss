@@ -1,0 +1,179 @@
+.pannel- {
+  &-layout {
+  }
+  &-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 0px 30px 30px 0px;
+    background-color: var(--white);
+    &-spacer {
+      flex-shrink: 0;
+    }
+    &-content {
+      background-color: var(--white);
+      flex: auto;
+      padding: 20px;
+    }
+    &-header-icon {
+      width: 34px;
+      height: 34px; 
+    }
+    &-vertical-line {
+      border: 1px solid rgba(211, 64, 206, 0.15);
+      display: block;
+      height: 100%;
+      width: 1px;
+    }
+    &-avater {
+      cursor: pointer;
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &-left-menubar {
+    // position: fixed;
+    position: fixed;
+    z-index: 9;
+    &-header {
+      padding: 0px 12px;
+    }
+    &-logo {
+      width: 93px;
+      height: 36px;
+    }
+    &-floating {
+      // position: fixed;
+      left: 0px;
+      bottom: 0px;
+      top: 0px;
+      right: 0px;
+      width: auto !important;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &-main {
+      background-color: var(--secondary);
+      // height: 100vh;
+      border-radius: 0px 30px 30px 0px;
+      padding: 24px 0px;
+      overflow: hidden;
+    }
+    &-btn {
+      padding: 8px 8px;
+      color: var(--white);
+      border-radius: 20px;
+      cursor: pointer;
+      @include text-5-14;
+    }
+    &-active-btn {
+      color: var(--primary);
+      background: linear-gradient(90deg, #4b4a4a 0%, #333333 78.24%);
+      border-radius: 20px;
+    }
+    &-toggle-active-btn {
+      background: linear-gradient(90deg, #444444 0%, #333333 78.24%);
+    }
+    &-sub-active {
+      background: linear-gradient(90deg, #4b4a4a 0%, #333333 78.24%);
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    &-sub-btn {
+      padding: 15px 32px;
+      color: var(--white);
+    }
+    &-sub-active-btn {
+      color: var(--primary);
+    }
+    &-rectangle-line {
+      position: absolute;
+      width: 240px;
+      height: 1px;
+      background: #ffffff;
+      opacity: 0.1;
+    }
+    &-btn-container {
+      padding: 10px 25px 20px 15px;
+      overflow-y: auto;
+      height: calc(100% - 108px);
+      scrollbar-width: thin;
+      scrollbar-color: black;
+      scrollbar-color: var(--primary) var(--secondary);
+      &::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+        background-color: var(--secondary);
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 10px;
+      }
+    }
+  }
+  &-body {
+    &-base {
+      display: flex;
+    }
+    &-spacer {
+      flex-shrink: 0;
+    }
+    &-content {
+      overflow: auto;
+      flex: auto;
+    }
+  }
+}
+
+//Animation-menu
+.slide-left-menu-enter-to,
+.slide-left-menu-leave-from {
+  margin-left: 0px;
+}
+.slide-left-menu-enter-active,
+.slide-left-menu-leave-active {
+  transition: all 0.2s ease;
+  margin-left: 0px;
+}
+.slide-left-menu-enter-from,
+.slide-left-menu-leave-to {
+  margin-left: var(--leftMenuNegSize);
+}
+
+//Animation-menu-hover
+.fade-left-menu-enter-to,
+.fade-left-menu-leave-from {
+  opacity: 1;
+}
+.fade-left-menu-enter-active,
+.fade-left-menu-leave-active {
+  transition: all 0.2s ease;
+}
+.fade-left-menu-enter-from,
+.fade-left-menu-leave-to {
+  opacity: 0;
+}
+
+.expand-left-menu-btn-enter-active,
+.expand-left-menu-btn-leave-active {
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+//Animation-router
+.fade-route-enter-to,
+.fade-route-leave-from {
+  opacity: 1;
+}
+.fade-route-enter-active,
+.fade-route-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-route-enter-from,
+.fade-route-leave-to {
+  opacity: 0;
+}

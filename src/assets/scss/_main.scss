@@ -1,0 +1,32 @@
+//Default
+@import './default/veriable';
+@import './default/typography';
+@import './default/color';
+@import './default/base';
+@import './default/common';
+@import './default/spacing';
+@import './default/animation';
+@import './default/button';
+
+//Layout
+@import './layout/pannel';
+@import './layout/page-layout';
+
+
+//Element
+@import './element/table/datatable.scss';
+@import './element/form/index.scss';
+@import './element/validate/message.scss';
+@import './element/sweetalert.scss';
+@import './element/modal.scss';
+@import './element/menu.scss';
+@import './element/pagelayout.scss';
+@import './element/navigation.scss';
+
+// custom
+@import './custom/custom';
+@import './custom/-registration';
+@import './dashboard/dashboard';
+
+//others
+@import './others/datePicker';

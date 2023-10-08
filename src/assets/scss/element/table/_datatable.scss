@@ -1,0 +1,312 @@
+//##################################################################
+//####### General Data Table CSS (Common for all data table) #######
+//##################################################################
+.data-table--main {
+  position: relative;
+}
+.data-table--container {
+  overflow: auto;
+  width: 100%;
+  // height: 10px;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+  tr:nth-child(even) {
+    background-color: var(--dim-white);
+    border-radius: 20px;
+    .data-table--cell-action-container{
+      background-color: var(--dim-white);
+    }
+  }
+  //Common table stuff.
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 1px;
+  }
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--gray-5);
+    border-bottom: 1px solid #EBEDF0;
+  }
+  td {
+    vertical-align: middle;
+    border-collapse: collapse !important;
+    border-spacing: 0;
+  }
+}
+.data-table--no-item {
+  position: absolute;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include no-text-select;
+}
+.data-table--loader-animation {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background-color: var(--primary);
+  height: 3px;
+  transition: all 0.3s;
+  overflow: hidden;
+  &-content {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 3px;
+    // background-color: var(--secondary);
+    background: linear-gradient(269.99deg, #333333 -0.58%, rgba(51, 51, 51, 0) 75.67%);
+    width: 50%;
+    animation: rot 2s infinite linear;
+    transition: all 0.3s;
+  }
+}
+
+@keyframes rot {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+//##################################################################
+//#################### Data Table Theaming CSS #####################
+//##################################################################
+/** 
+  Theme name cc-data-table
+*/
+.cc-data-table {
+  &.data-table--main {
+    background-color: #fff;
+  }
+  .data-table- {
+    &-container {
+      thead {
+        // background: #eee;
+        height: 34px;
+        z-index: 1;
+        text-transform: uppercase;
+        color: #79828D;
+        letter-spacing: 0.1em;
+        td {
+          min-height: 40px;
+        }
+        tr{
+          border-bottom: 1 px solid #EBEDF0;
+        }
+      }
+      //Scrollbar.
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary) var(--white);
+      &::-webkit-scrollbar {
+        height: 10px;
+        width: 5px;
+        background-color: var(--gray-5);
+        // background-color: var(--white);
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background: var(--primary);
+      }
+    }
+
+    //Spacing
+    &-x-spacer {
+      padding: 0px !important;
+      width: 20px;
+    }
+    &-action-spacer {
+      padding: 0px !important;
+      width: 50px;
+    }
+
+    //Header Cell
+    &-header-cell {
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+      &-checkbox {
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+      }
+      &-sort {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &::before {
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 900;
+          content: "\f0dc";
+          opacity: 0.2;
+          padding-top: 3px;
+        }
+        &-icon {
+          .cc-data-table {
+            &.data-table--main {
+              display: flex;
+              background-color: #fff;
+            }
+            .data-table- {
+              &-container {
+                background-color: rgb(255, 255, 255);
+                overflow-x: auto;
+                width: 100%;
+
+                // /* Just common table stuff. */
+                table {
+                  border-collapse: collapse;
+                  width: 100%;
+                }
+                th,
+                td {
+                  padding: 8px 16px;
+                }
+                td {
+                  white-space: nowrap;
+                }
+                thead {
+                  background: #eee;
+                  z-index: 1;
+                }
+              }
+              &-cell {
+                &-action {
+                  background-color: var(--white);
+                }
+              }
+              &-y-scroll {
+                overflow-y: auto;
+                -ms-overflow-style: none; /* Internet Explorer 10+ */
+                scrollbar-width: none; /* Firefox */
+                &::-webkit-scrollbar {
+                  display: none; /* Safari and Chrome */
+                }
+              }
+              &-scroll {
+                &-head {
+                  background: #eee;
+                }
+                &-bar {
+                  overflow-y: auto;
+                  overflow-x: hidden;
+                }
+              }
+              &-loading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+              }
+            }
+          }
+
+          position: absolute;
+          padding-top: 2px;
+        }
+      }
+      &-def {
+        padding: 0px 0px 0px 15px;
+        @include text-6-11;
+        color:var(--gray-6)
+        
+      }
+    }
+    //Body Cell
+    &-body-cell {
+      &-checkbox {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      &-def {
+        padding: 15px;
+         @include text-4-13;
+        color:var(--gray-1)
+      }
+    }
+    &-row-tr {
+      border-bottom: 1px solid #EBEDF0;
+      &:hover{
+        background-color: var(--primary-shade);
+        cursor: pointer;
+        .data-table--cell-action-container{
+          background-color: var(--primary-shade);
+        }
+      }
+    }
+    &-row-cell {
+      height: 40px;
+      width: 100%;
+    }
+    &-cell {
+    }
+
+    //Action Content
+    &-cell-action {
+      position: sticky;
+      right: 0px;
+      background-color: var(--white);
+      &-container {
+        height: 100%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      &-title {
+      }
+      &-option-container {
+        position: fixed;
+        background-color: var(--white);
+        opacity: 0;
+        display: none;
+        z-index: 10;
+        border-radius: 8px;
+        box-shadow: (0px -1px 60px rgba(0, 0, 0, 0.11))
+      }
+
+      &-menu {
+        background-color: #fff;
+        // border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        color: #212529;
+        cursor: pointer;
+        list-style: none;
+        text-align: left;
+
+        &-item {
+          color: #212529;
+          padding: 0.25rem 1.5rem;
+          margin: 5px;
+          border-radius: 8px;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+          &:hover {
+            background-color: var(--primary);
+            cursor: pointer;
+          }
+        }
+      }
+      &-options {
+      }
+    }
+  }
+}
+
+
+
+@media print {
+  .data-table--main {
+
+  }
+}

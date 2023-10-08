@@ -1,0 +1,39 @@
+$colorList:(
+  //Theme colors
+  'primary':#F0BA1B,
+  'primary-lighter':#F0C547,
+  'primary-shade':#FFF9E8,
+  'secondary':#333333,
+  'secondary-shade':#E8E8E8,
+  'black':#1A160C,
+  'gray-1':#4A4945,
+  'gray-2':#666460,
+  'gray-3':#867979,
+  'gray-4':#C9B9B9,
+  'gray-5':#EAEAEA,
+  'gray-6':#79828D,
+  
+  'white':#FFFFFF,
+  'dim-white':#FFFFF5,
+
+  'info':#0090FF,
+  'info-lighter':#59AFF1,
+  'info-shade':#E6F4FF,
+  'success':#16C784,
+  'success-shade':#C0FEEE ,
+  'warning':#FFB84C,
+  'warning-shade':#FFF3E0,
+  'danger':#FF4646,
+  'danger-shade':#E8E8E8,
+
+  'title':#2D405A,
+);
+
+
+$breakPoint:(
+  '-sm' : 576px,
+  '-md' : 768px,
+  '-lg' : 992px,
+  '-xlg' : 1200px,
+  '-xxlg': 1500px,
+); 

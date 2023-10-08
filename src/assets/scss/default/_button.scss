@@ -1,0 +1,182 @@
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 12px 18px;
+  border-radius: 36px;
+  transition: all .3s;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  height:36px;
+  &-disabled{
+      pointer-events: none;
+      background-color: var(--gray-5) !important;
+      color: var(--mid) !important;
+      i{
+          color: var(--mid) !important;
+      }
+  }
+  &-loading{
+      pointer-events: none;
+  }
+  &-sm{
+      padding: 5px 13px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+  }
+  &-md{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+  }
+  &-lg{
+      padding: 0.7rem 0.9375rem;
+      height: 42px;
+  }
+  &-squire-md{
+    border-radius: 8px;
+    height: 36px;
+    min-width: 100px;
+  }
+  &-squire-lg{
+    border-radius: 8px;
+    height: 42px;
+    min-width: 128px;
+  }
+  &-auto-width{
+    border-radius: 8px;
+    height: 36px;
+    // min-width: 100px;
+  }
+}
+
+
+//Define all button here
+$button-templete: (
+  "primary": (
+    "bg": "primary",
+    "border": "",
+    "text-color": "white",
+    "hover-bg": "primary-lighter",
+    "hover-border": "",
+    "hover-text-color": "white",
+  ),
+  "secondary": (
+    "bg": "secondary",
+    "border": "",
+    "text-color": "black",
+    "hover-bg": "secondary-shade",
+    "hover-border": "",
+    "hover-text-color": "black",
+  ),
+  "info": (
+    "bg": "info-shade",
+    "border": "",
+    "text-color": "info",
+    "hover-bg": "info",
+    "hover-border": "",
+    "hover-text-color": "white",
+  ),
+  "success": (
+    "bg": "success-shade",
+    "border": "",
+    "text-color": "success",
+    "hover-bg": "success",
+    "hover-border": "",
+    "hover-text-color": "white",
+  ),
+  "warning": (
+    "bg": "warning-shade",
+    "border": "",
+    "text-color": "warning",
+    "hover-bg": "warning",
+    "hover-border": "",
+    "hover-text-color": "white",
+  ),
+  "danger": (
+    "bg": "danger-shade",
+    "border": "",
+    "text-color": "danger",
+    "hover-bg": "danger",
+    "hover-border": "",
+    "hover-text-color": "white",
+  ),
+  "outlined": (
+    "bg": "white",
+    "border": "gray-2",
+    "text-color": "gray-1",
+    "hover-bg": "success-shade",
+    "hover-border": "success",
+    "hover-text-color": "black",
+  ),
+);
+
+//Button generation code
+@each $name, $value in $button-templete {
+  $btn-bg-key: map-get($value, "bg");
+  $btn-border-key: map-get($value, "border");
+  $btn-text-color-key: map-get($value, "text-color");
+
+  $btn-hover-bg-key: map-get($value, "hover-bg");
+  $btn-hover-border-key: map-get($value, "hover-border");
+  $btn-hover-text-key: map-get($value, "hover-text-color");
+
+  $btn-border-size: 1px;
+  @if (map-get($value, "border-size")) {
+    $btn-border-size: map-get($value, "border-size");
+  }
+
+  $btn-bg: "transparent";
+  @if ($btn-bg-key != "") {
+    $btn-bg: var(--#{$btn-bg-key});
+  }
+
+  .btn-#{$name} {
+    background-color: #{$btn-bg};
+    border: #{$btn-border-size} solid var(--#{$btn-border-key});
+    color: var(--#{$btn-text-color-key});
+
+    circle{
+      stroke: var(--#{$btn-text-color-key});
+    }
+
+    //Hover and focus background
+    @if ($btn-hover-bg-key != "") {
+      &:hover {
+        background-color: var(--#{$btn-hover-bg-key});
+      }
+    } @else if($btn-bg-key != "") {
+      &:hover {
+        background-color: mix(#fff, map-get($colorList, $btn-bg-key), 15%);
+      }
+      &:focus {
+        background-color: mix(#fff, map-get($colorList, $btn-bg-key), 15%);
+      }
+    }
+
+    //Hover and focus text color
+    @if ($btn-hover-text-key != "") {
+      &:hover {
+        color: var(--#{$btn-hover-text-key});
+      }
+    }
+    //Hover and focus border color
+    @if ($btn-hover-border-key != "") {
+      &:hover {
+        border: #{$btn-border-size} solid var(--#{$btn-hover-border-key});
+      }
+    }
+  }
+}

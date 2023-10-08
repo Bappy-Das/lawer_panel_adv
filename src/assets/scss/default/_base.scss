@@ -1,0 +1,169 @@
+:root{
+    --scrollbar-line:#EAEAEA;
+    --scrollbar-thumb:#F0BA1B;
+}
+
+* {
+    padding:0rem; 
+    margin:0rem; 
+    box-sizing: border-box; 
+    vertical-align: top;
+    
+    scrollbar-width: thin;
+    scrollbar-color:black;
+    scrollbar-color:var(--scrollbar-thumb) var(--scrollbar-line);
+    &::-webkit-scrollbar{
+        height: 5px;
+        width: 5px;
+        background-color: var(--scrollbar-line);
+        border-radius: 100px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: var(--scrollbar-thumb);
+        border-radius: 100px;
+    }
+}
+*,*:before,*:after {box-sizing: border-box;margin: 0rem;}
+a {text-decoration: none;}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-Thin.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-ThinItalic.otf');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-ExtraLight.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-ExtraLightItalic.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-LightItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-MediumItalic.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-SemiBold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-SemiBoldItalic.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-ExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-ExtraBoldItalic.otf');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'xit-poppins';
+    src: url('/fonts/poppins/Poppins-BlackItalic.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+*{
+    font-family: 'xit-poppins', sans-serif;  
+}
+
+html {
+    //font-family: 'poppins', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'xit-poppins', sans-serif;
+    font-size: 0.875rem;
+    word-spacing: 0.0625rem; 
+    letter-spacing:0.04rem;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+body{
+    color: var(--body-dark);
+    background-color: #EFEFEF;
+}
+
+//Placeholder
+:root {--placeholder-color:var(--gray-3); --placeholder-transition-time:.4s;}
+::-webkit-input-placeholder {@include text-4-14; opacity: 1; -webkit-transition: opacity var(--placeholder-transition-time); transition: opacity var(--placeholder-transition-time); color: var(--placeholder-color); } /* Chrome <=56, Safari < 10 */
+:-moz-placeholder {@include text-4-14; opacity: 1; -moz-transition: opacity var(--placeholder-transition-time); transition: opacity var(--placeholder-transition-time);  color: var(--placeholder-color);} /* FF 4-18 */
+::-moz-placeholder {@include text-4-14; opacity: 1; -moz-transition: opacity var(--placeholder-transition-time); transition: opacity var(--placeholder-transition-time);  color: var(--placeholder-color);} /* FF 19-51 */
+:-ms-input-placeholder {@include text-4-14; opacity: 1; -ms-transition: opacity var(--placeholder-transition-time); transition: opacity var(--placeholder-transition-time);  color: var(--placeholder-color);} /* IE 10+ */
+::placeholder {@include text-4-14; opacity: 1; transition: opacity var(--placeholder-transition-time);  color: var(--placeholder-color); font-weight: 300;font-size: 14px; line-height: 22px; } /* Modern Browsers */
+
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0;  } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0;  } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0;  } /* Modern Browsers */

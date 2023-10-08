@@ -1,0 +1,71 @@
+.cc-message-box--container{
+  .cc-message-box-{
+      &-main{
+          @include input-border;
+          border-radius: 8px;
+          display: flex;
+          textarea{
+              padding: 15px 0px;
+              border-radius: 8px;
+              &::-webkit-scrollbar{
+                  height: 10px;
+                  width: 10px;
+                  background-color: var(--scrollbar-line);
+              }
+              &::-webkit-scrollbar-thumb{
+                  border-radius: 100px;
+                  background: var(--scrollbar-thumb);
+              }
+          }
+      }
+      &-message{
+          width: 100%;
+          textarea{
+              padding: 15px 0px;
+              border-radius: 8px;
+              min-width: 0px;
+              &::-webkit-scrollbar{
+                  height: 10px;
+                  width: 10px;
+                  background-color: var(--scrollbar-line);
+              }
+              &::-webkit-scrollbar-thumb{
+                  border-radius: 100px;
+                  background: var(--scrollbar-thumb);
+              }
+          }
+      }
+      &-input{
+          width: 100%;
+          border: 0px;
+          
+          &:focus {
+              outline:none;
+          }
+      }
+      &-noscroll{
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar { 
+              display: none;
+          }
+      }
+  }
+  .cc-message-box--detail{
+      display: flex;
+      min-height: var(--input-detail-height);
+      padding-top: var(--input-detail-padding-top);
+      &-box{
+          flex: auto;
+      }
+      &-count{
+
+      }
+  }
+  &.cc-message-box--disabled{
+      .cc-message-box-{
+          &-main{background-color: var(--disbled-background);}
+          &-main{textarea{background-color: var(--disbled-background);}}
+      }
+  }
+}

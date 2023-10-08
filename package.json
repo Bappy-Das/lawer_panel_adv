@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "font": "svgtofont --sources ./icons --output ./public/xitfont --fontName xit-font"
+  },
+  "dependencies": {
+    "@vuepic/vue-datepicker": "^3.5.3",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "font": "0.0.4",
+    "jsbarcode": "^3.11.5",
+    "laravel-echo": "^1.14.2",
+    "pinia": "^2.0.14",
+    "pusher-js": "^8.0.0",
+    "vee-validate": "^4.6.2",
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.0",
+    "vue-sweetalert2": "^5.0.5",
+    "xlsx": "^0.18.5",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "sass": "^1.53.0",
+    "svgtofont": "^3.17.8",
+    "vite": "^2.9.9"
+  },
+  "svgtofont": {
+    "website": {
+      "title": "xit",
+      "logo": null
+    }
+  }
+}

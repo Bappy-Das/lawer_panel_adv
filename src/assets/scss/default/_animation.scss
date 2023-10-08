@@ -1,0 +1,44 @@
+//Animation-fade
+.dropdown-enter-to,
+.dropdown-leave-from {
+  opacity:1 !important;
+  transform: translateY(0px);
+}
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: all .3s ease;
+}
+.dropdown-enter-from,
+.dropdown-leave-to {
+    opacity:0 !important;
+    transform: translateY(-5px);
+}
+//Animation-fade
+.dropup-enter-to,
+.dropup-leave-from {
+  opacity:1 !important;
+  transform: translateY(0px);
+}
+.dropup-enter-active,
+.dropup-leave-active {
+  transition: all .3s ease;
+}
+.dropup-enter-from,
+.dropup-leave-to {
+    opacity:0 !important;
+    transform: translateY(5px);
+}
+
+//Animation-zoom-toggle
+.zoom-toggle-enter-to,
+.zoom-toggle-leave-from {
+  transform: scale(1)
+}
+.zoom-toggle-enter-active,
+.zoom-toggle-leave-active {
+  transition: all .3s ease;
+}
+.zoom-toggle-enter-from,
+.zoom-toggle-leave-to {
+  transform: scale(0)
+}

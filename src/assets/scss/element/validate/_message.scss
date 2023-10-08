@@ -1,0 +1,56 @@
+.message--container{
+    display: flex;
+    font-size: 12px;
+    padding-top: 2px;
+    .message-{
+        &-icon{
+            display: flex;
+            align-items: center;
+            padding-right: 3px;
+            padding-top: 2px;
+            &-font{
+                font-size: 12px;
+                font-weight: bold;
+                margin-top: -2px;
+            }
+        }
+        &-text{
+            font-size: 13px;
+            display: block;
+            align-items: center;
+            font-size: 12px;
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+    &.message--error{
+        color: var(--danger);
+    }
+    &.message--success{
+        color: var(--success);
+    }
+    &.message--warning{
+        color: var(--warning);
+    }
+    &.message--info{
+        color: var(--info);
+    }
+    &.message--bg-box{
+        color: var(--white);
+        display: inline-flex;
+        border-radius: 5px;
+    }
+    &.message--error-bg{
+        background-color: var(--danger);
+    }
+    &.message--success-bg{
+        background-color: var(--success);
+    }
+    &.message--warning-bg{
+        background-color: var(--warning);
+    }
+    &.message--info-bg{
+        background-color: var(--info);
+    }
+}

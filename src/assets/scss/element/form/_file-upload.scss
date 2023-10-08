@@ -1,0 +1,30 @@
+.cc-file-upload--container{
+    .cc-file-upload-{
+        &-input{
+            input{
+                text-align: center;
+                margin: auto;                        
+            }
+            input::-webkit-file-upload-button, input::file-selector-button{
+                background-color: var(--primary-shade);
+                color: var(--primary);
+                border: 1px solid transparent;
+                font-weight: 500;
+                font-size: 14px; 
+                height: 29px;
+                border-radius: 4px;
+                padding: 0px 10px;
+                cursor: pointer;
+                @include text-4-14;
+                &:hover{
+                    background-color: var(--primary);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    .cc-select-box--detail{
+        min-height: var(--input-detail-height);
+        padding-top: var(--input-detail-padding-top);
+    }
+}

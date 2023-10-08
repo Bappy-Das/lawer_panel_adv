@@ -1,0 +1,154 @@
+.cc-select-box--container{
+  .cc-select-box-{
+      &-preview{
+          //src element/form/index
+          @include input-border;
+          display: flex;
+          background-color: var(--white);
+          transition: all .3s;
+          cursor: pointer;
+          align-items: center;
+          padding-right: 11px;
+          border-radius: 8px;
+          height: 36px;
+      }
+      &-input{
+          color: var(--mid);
+          width:100%;
+          border: 0px;
+          color: var(--mid);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding-left: 16px;
+          border-radius: 8px;
+          //src default/typography
+          @include text-4-14;
+      }
+      &-search-input{
+          flex: auto;
+          padding-left: 16px;
+          input{
+              min-width: 0px;
+              width: 100%;
+              color: var(--mid);
+              @include text-4-14;
+              &:focus {
+                  outline:none;
+              }
+              border: 0px;
+          }
+      }
+      &-placeholder{
+            @include text-4-14;
+            flex: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: var(--placeholder-color);
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+      }
+      &-text-preview{
+          flex: auto;
+          height: 36px;
+          display: grid;
+          align-items: center;
+      }
+      &-right-icons{
+          display: flex;
+          align-items: center;
+      }
+      &-item-container{
+          //src default/typography
+          //@include b3-meta;
+          position: fixed;
+          opacity: 0;
+          background-color: var(--white);
+          max-height: 300px;
+          z-index: 10;
+          box-shadow: 0px 5px 22px rgba(27, 27, 18, 0.13);
+          border-radius: 10px;
+          min-height: 20px;
+      }
+      &-items{
+          overflow-y: auto;
+      }
+      &-item{
+          transition: all .1s;
+          cursor: pointer;
+          &-hover{
+              background-color: var(--primary-shade);
+              border-radius: 10px;
+          }
+          &-text{
+              padding: 10px 15px;
+          }
+      }
+      &-arrow-down{
+          font-size: 14px;
+          line-height: 14px;
+          color: var(--light);
+          padding-left: 5px;
+          padding-top: 3px;
+      }
+      &-reset{
+          font-size: 12px;
+          line-height: 12px;
+          color: var(--light);
+          padding-left: 5px;
+      }
+  }
+  &-sm{
+      .cc-select-box-{
+            &-preview{
+                padding-right: 9px;
+                height: 32px;
+            }
+            &-placeholder{
+                padding-left: 14px;
+            }
+            &-input{
+                padding-left: 14px;
+            }
+            &-search-input{
+                padding-left: 14px;
+            }
+      }
+  }
+  &-lg{
+      .cc-select-box-{
+            &-preview{
+                padding-right: 15px;
+                height: 52px;
+            }
+            &-placeholder{
+                font-size: 16px;
+                padding-left: 18px;
+            }
+            &-input{
+                font-size: 16px;
+                padding-left: 18px;
+            }
+            &-search-input{
+                padding-left: 18px;
+            }
+      }
+  }
+
+  .cc-select-box--detail{
+      min-height: var(--input-detail-height);
+      padding-top: var(--input-detail-padding-top);
+  }
+  &.cc-select-box--disabled{
+    
+      .cc-select-box-{
+          &-preview{background-color: var(--disbled-background);border-radius: 8px;}
+          &-placeholder{background-color: var(--disbled-background);}
+        //   &-text-preview{background-color: var(--disbled-background);}
+          &-input{background-color: var(--disbled-background);border-radius: 8px;}
+          &-search-input{input{background-color: var(--disbled-background);}}
+      }
+  }
+}

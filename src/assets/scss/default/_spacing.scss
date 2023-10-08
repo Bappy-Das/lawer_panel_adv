@@ -1,0 +1,99 @@
+.m-all-minus-10 {
+  margin: -10px !important;
+}
+
+// Height & Width
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.h-auto {
+  height: auto;
+}
+
+//Padding Margin
+$spaceAmounts: (
+  -5,
+  -4,
+  -3,
+  -2,
+  -1,
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  10,
+  12,
+  15,
+  17,
+  20,
+  23,
+  24,
+  25,
+  30,
+  32,
+  35,
+  40,
+  45,
+  48,
+  50,
+  55,
+  60
+);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceAmounts {
+  .ma-#{$space} {
+    margin: #{$space}px !important;
+  }
+  .mt-#{$space} {
+    margin-top: #{$space}px !important;
+  }
+  .mb-#{$space} {
+    margin-bottom: #{$space}px !important;
+  }
+  .ml-#{$space} {
+    margin-left: #{$space}px !important;
+  }
+  .mr-#{$space} {
+    margin-right: #{$space}px !important;
+  }
+  .pa-#{$space} {
+    padding: #{$space}px !important;
+  }
+  .mx-#{$space} {
+    margin-left: #{$space}px !important;
+    margin-right: #{$space}px !important;
+  }
+  .px-#{$space} {
+    padding-left: #{$space}px !important;
+    padding-right: #{$space}px !important;
+  }
+  .my-#{$space} {
+    margin-top: #{$space}px !important;
+    margin-bottom: #{$space}px !important;
+  }
+  .borderRadious-#{$space}{
+    border-radius: #{$space}px !important;
+  }
+  .py-#{$space} {
+    padding-top: #{$space}px !important;
+    padding-bottom: #{$space}px !important;
+  }
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
