@@ -20,7 +20,7 @@ const routes = [
       {
         path: "/notes",
         name: "notes",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/notes/index.vue"),
         meta: {
           pageTitle: "Dashboard",
           requiresAuth: true,
@@ -29,9 +29,9 @@ const routes = [
       {
         path: "/all_cases",
         name: "allCases",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/notes/index.vue"),
         meta: {
-          pageTitle: "Dashboard",
+          pageTitle: "All Casess",
           requiresAuth: true,
         },
       },
