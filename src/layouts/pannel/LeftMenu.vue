@@ -63,7 +63,7 @@
       </div>
       <div class="ml-25 mr-50">
         <div class="bg-white opacity-01 mr-20" style="height:1px"></div>
-        <div class="py-30 text-white text-4-12">&copy;XIT 2022</div>
+        <div class="py-30 text-white text-4-12">&copy;Bappy Das</div>
       </div>
     </div>
   </div>

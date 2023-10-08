@@ -14,7 +14,7 @@ const routes = [
         component: () => import("@/pages/dashboard/index.vue"),
         meta: {
           pageTitle: "Dashboard",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
       {
@@ -23,7 +23,7 @@ const routes = [
         component: () => import("@/pages/notes/index.vue"),
         meta: {
           pageTitle: "Dashboard",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
       {
@@ -32,79 +32,71 @@ const routes = [
         component: () => import("@/pages/notes/newNotes.vue"),
         meta: {
           pageTitle: "Dashboard",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
       {
         path: "/all_cases",
         name: "allCases",
-        component: () => import("@/pages/notes/index.vue"),
+        component: () => import("@/pages/cases/allCases.vue"),
         meta: {
           pageTitle: "All Casess",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
       {
         path: "/running_cases",
         name: "runningCases",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/cases/runningCase.vue"),
         meta: {
-          pageTitle: "Dashboard",
-          requiresAuth: true,
+          pageTitle: "Running Case",
+          // requiresAuth: true,
         },
       },
       {
         path: "/today_cases",
         name: "todayCases",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/cases/todayCases.vue"),
         meta: {
           pageTitle: "Dashboard",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
-      {
-        path: "/today_cases",
-        name: "todayCases",
-        component: () => import("@/pages/dashboard/index.vue"),
-        meta: {
-          pageTitle: "Dashboard",
-          requiresAuth: true,
-        },
-      },
+
       {
         path: "/tomorrow_cases",
         name: "tomorrowCases",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/cases/tomorrowCases.vue"),
         meta: {
           pageTitle: "Dashboard",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
       {
         path: "/not_updated",
         name: "notUpdatedCases",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/cases/notUpdatedCases.vue"),
         meta: {
-          pageTitle: "Dashboard",
-          requiresAuth: true,
+          pageTitle: "Not Updated Cases",
+          // requiresAuth: true,
         },
       },
       {
         path: "/decided",
         name: "decidedCases",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/cases/decidedCases.vue"),
         meta: {
           pageTitle: "Dashboard",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
       {
         path: "/abandoned",
         name: "abandonedCases",
-        component: () => import("@/pages/dashboard/index.vue"),
+        component: () => import("@/pages/cases/abandonedCases.vue"),
         meta: {
           pageTitle: "Dashboard",
-          requiresAuth: true,
+          // requiresAuth: true,
         },
       },
       {
@@ -113,7 +105,7 @@ const routes = [
         component: () => import("@/pages/user-profile/user-profile.vue"),
         meta: {
           pageTitle: "User Profile",
-          requiresAuth: true
+          // requiresAuth: true
         },
       },
       {
@@ -122,7 +114,7 @@ const routes = [
         component: () => import("@/pages/settings/settings.vue"),
         meta: {
           pageTitle: "Settings",
-          requiresAuth: true
+          // requiresAuth: true
         },
       },
 

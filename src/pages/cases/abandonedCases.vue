@@ -1,14 +1,14 @@
 <template>
-    <PageLayout header="All Notes" subHeader="">
+    <PageLayout header="Abandoned Cases" subHeader="">
         <div class="deliveries-service-btn">
-            <router-link :to="{ name: 'newNote' }">
+            <!-- <router-link :to="{ name: 'newNote' }">
                 <Btn class="btn-success btn-squire-md mb-10">
                     <div class="d-flex-center-start">
                         <i class="fa-solid fa-plus"></i>
-                        <span class="text px-5">New Delivery</span>
+                        <span class="text px-5">New Case</span>
                     </div>
                 </Btn>
-            </router-link>
+            </router-link> -->
         </div>
         <hr class="hr-line" />
         <!---------------------Delivery Action  ------------------------------------------>
@@ -60,24 +60,84 @@ const dataRow = reactive([
 
 const dataTableHeader = reactive([
     {
-        title: "Date",
+        title: "File NO",
         field: "consignment_id",
-        style: { minWidth: "200px" },
+        style: { minWidth: "100px" },
     },
     {
-        title: "Task",
+        title: "Case Type",
         field: "merchant_info",
-        style: { minWidth: "200px" },
+        style: { minWidth: "100px" },
     },
     {
-        title: "Stutas",
+        title: "Case No",
         field: "merchant_info",
-        style: { minWidth: "200px" },
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Court",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Police Station",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "1st Party",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "2nd Party",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Appointed by",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Mobile No",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Law & Section",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Previous Date",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Next Date",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Fixed For",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Status",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
+    },
+    {
+        title: "Call",
+        field: "merchant_info",
+        style: { minWidth: "100px" },
     },
     {
         title: "Action",
         field: "merchant_info",
-        style: { minWidth: "200px" },
+        style: { minWidth: "100px" },
     },
 
 ]);
