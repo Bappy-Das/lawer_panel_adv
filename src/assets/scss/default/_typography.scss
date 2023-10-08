@@ -1,40 +1,95 @@
 // font-size
-.font-8 {font-size: 8px !important;}
-.font-9 {font-size: 9px !important;}
-.font-10 {font-size: 10px !important;}
-.font-11 {font-size: 11px !important;}
-.font-12 {font-size: 12px !important;}
-.font-14 {font-size: 14px;}
-.font-15 {font-size: 15px;}
-.font-16 {font-size: 16px;}
-.font-18 {font-size: 18px;}
-.font-20 {font-size: 20px;}
-.font-25 {font-size: 25px;}
-.font-30 {font-size: 30px;}
-.font-40 {font-size: 40px;}
-  
+.font-8 {
+  font-size: 8px !important;
+}
+.font-9 {
+  font-size: 9px !important;
+}
+.font-10 {
+  font-size: 10px !important;
+}
+.font-11 {
+  font-size: 11px !important;
+}
+.font-12 {
+  font-size: 12px !important;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-25 {
+  font-size: 25px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-40 {
+  font-size: 40px;
+}
+
 // Font weight
-.bold{font-weight: bold;}
-.fw-400 {font-weight: 400;}
-.fw-500 {font-weight: 500;}
-.fw-600 {font-weight: 600;}
+.bold {
+  font-weight: bold;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
 
 //Line Height
-.line-height-1{line-height: 1;}
+.line-height-1 {
+  line-height: 1;
+}
 
 // Text
-@mixin no-text-select{-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
-.no-text-select{@include no-text-select;}
-.line-through{text-decoration:line-through}
+@mixin no-text-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.no-text-select {
+  @include no-text-select;
+}
+.line-through {
+  text-decoration: line-through;
+}
 
 // Font style
-.italic{font-style: italic}
-.uppercase{text-transform: uppercase}
-.lowercase{text-transform: lowercase}
-.capitalize{text-transform: capitalize}
+.italic {
+  font-style: italic;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
 
 .text-center {
-    text-align: center !important;
+  text-align: center !important;
 }
 .text-left {
   text-align: left;
@@ -43,153 +98,208 @@
   text-align: right;
 }
 
-@mixin text-7-16{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+@mixin text-7-16 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 }
-@mixin text-7-14{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
+@mixin text-7-14 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
 }
-@mixin text-6-16{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+@mixin text-6-16 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
 }
-@mixin text-6-14{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
+@mixin text-6-14 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
 }
-@mixin text-6-12{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
+@mixin text-6-13 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
 }
-@mixin text-6-11{
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 16px;
+@mixin text-6-12 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
 }
-@mixin text-5-26{
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 42px;
+@mixin text-6-11 {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
 }
-@mixin text-5-20{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+@mixin text-5-26 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 42px;
 }
-@mixin text-5-18{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+@mixin text-5-20 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
 }
-@mixin text-5-15{
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
+@mixin text-5-18 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
 }
-@mixin text-5-14{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
+@mixin text-5-15 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
 }
-@mixin text-5-13{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 22px;
+@mixin text-5-14 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
 }
-@mixin text-5-12{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 150%;
+@mixin text-5-13 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
 }
-@mixin text-5-11{
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 150%;
+@mixin text-5-12 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
 }
-@mixin text-5-10{
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 150%;
+@mixin text-5-11 {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
 }
-@mixin text-4-16{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+@mixin text-5-10 {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
 }
-@mixin text-4-15{
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
+@mixin text-4-16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
-@mixin text-4-14{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+@mixin text-4-15 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
-@mixin text-4-13{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 150%;
+@mixin text-4-14 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 }
-@mixin text-4-12{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
+@mixin text-4-13 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
 }
-@mixin text-4-11{
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 150%;
+@mixin text-4-12 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
 }
-@mixin text-4-10{
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 150%;
+@mixin text-4-11 {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
 }
-@mixin text-3-14{
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 150%;
+@mixin text-4-10 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
 }
-@mixin text-3-10{
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 150%;
+@mixin text-3-14 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
 }
-
-
-@mixin baseTypography($name){
-    .text-7-16#{$name}{@include text-7-16}
-    .text-7-14#{$name}{@include text-7-14}
-    .text-6-16#{$name}{@include text-6-16}
-    .text-6-14#{$name}{@include text-6-14}
-    .text-6-12#{$name}{@include text-6-12}
-    .text-6-11#{$name}{@include text-6-11}
-    .text-5-26#{$name}{@include text-5-26}
-    .text-5-20#{$name}{@include text-5-20}
-    .text-5-18#{$name}{@include text-5-18}
-    .text-5-15#{$name}{@include text-5-15}
-    .text-5-14#{$name}{@include text-5-14}
-    .text-5-13#{$name}{@include text-5-13}
-    .text-5-12#{$name}{@include text-5-12}
-    .text-5-11#{$name}{@include text-5-11}
-    .text-5-10#{$name}{@include text-5-10}
-    .text-4-16#{$name}{@include text-4-16}
-    .text-4-15#{$name}{@include text-4-15}
-    .text-4-14#{$name}{@include text-4-14}
-    .text-4-13#{$name}{@include text-4-13}
-    .text-4-12#{$name}{@include text-4-12}
-    .text-4-11#{$name}{@include text-4-11}
-    .text-4-10#{$name}{@include text-4-10}
-    .text-3-14#{$name}{@include text-3-14}
-    .text-3-10#{$name}{@include text-3-10}
+@mixin text-3-10 {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 150%;
 }
 
-@include baseTypography('');
+@mixin baseTypography($name) {
+  .text-7-16#{$name} {
+    @include text-7-16;
+  }
+  .text-7-14#{$name} {
+    @include text-7-14;
+  }
+  .text-6-16#{$name} {
+    @include text-6-16;
+  }
+  .text-6-14#{$name} {
+    @include text-6-14;
+  }
+  .text-6-13#{$name} {
+    @include text-6-13;
+  }
+  .text-6-12#{$name} {
+    @include text-6-12;
+  }
+  .text-6-11#{$name} {
+    @include text-6-11;
+  }
+  .text-5-26#{$name} {
+    @include text-5-26;
+  }
+  .text-5-20#{$name} {
+    @include text-5-20;
+  }
+  .text-5-18#{$name} {
+    @include text-5-18;
+  }
+  .text-5-15#{$name} {
+    @include text-5-15;
+  }
+  .text-5-14#{$name} {
+    @include text-5-14;
+  }
+  .text-5-13#{$name} {
+    @include text-5-13;
+  }
+  .text-5-12#{$name} {
+    @include text-5-12;
+  }
+  .text-5-11#{$name} {
+    @include text-5-11;
+  }
+  .text-5-10#{$name} {
+    @include text-5-10;
+  }
+  .text-4-16#{$name} {
+    @include text-4-16;
+  }
+  .text-4-15#{$name} {
+    @include text-4-15;
+  }
+  .text-4-14#{$name} {
+    @include text-4-14;
+  }
+  .text-4-13#{$name} {
+    @include text-4-13;
+  }
+  .text-4-12#{$name} {
+    @include text-4-12;
+  }
+  .text-4-11#{$name} {
+    @include text-4-11;
+  }
+  .text-4-10#{$name} {
+    @include text-4-10;
+  }
+  .text-3-14#{$name} {
+    @include text-3-14;
+  }
+  .text-3-10#{$name} {
+    @include text-3-10;
+  }
+}
+
+@include baseTypography("");

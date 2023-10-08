@@ -8,103 +8,105 @@
         <div class="input-group-container col-wrap w-100">
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-percel">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600 text-primary">2</div>
-                <div class="text-6-14 text-gray-2">All cases</div>
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 text-primary dashboard-card-number">
+                  2
+                </div>
+                <div class="text-6-13 text-gray-2">All cases</div>
               </div>
             </div>
           </div>
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-delivered">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600" :style="{ color: '#E257EE' }">
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 dashboard-card-number" :style="{ color: '#E257EE' }">
                   5
                 </div>
-                <div class="text-6-14 text-gray-2">Running cases</div>
+                <div class="text-6-13 text-gray-2">Running cases</div>
               </div>
             </div>
           </div>
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-return">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600" :style="{ color: '#F26546' }">
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 dashboard-card-number" :style="{ color: '#F26546' }">
                   5
                 </div>
-                <div class="text-6-14 text-gray-2">Today's cases</div>
+                <div class="text-6-13 text-gray-2">Today's cases</div>
               </div>
             </div>
           </div>
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-process">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600" :style="{ color: '#12BFA0' }">
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 dashboard-card-number" :style="{ color: '#12BFA0' }">
                   5
                 </div>
-                <div class="text-6-14 text-gray-2">Tomorrow's cases</div>
+                <div class="text-6-13 text-gray-2">Tomorrow's cases</div>
               </div>
             </div>
           </div>
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-service-charge">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600" :style="{ color: '#38D69A' }">
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 dashboard-card-number" :style="{ color: '#38D69A' }">
                   5
                 </div>
-                <div class="text-6-14 text-gray-2">Not updated cases</div>
+                <div class="text-6-13 text-gray-2">Not updated cases</div>
               </div>
             </div>
           </div>
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-sale">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600" :style="{ color: '#68B8F5' }">
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 dashboard-card-number" :style="{ color: '#68B8F5' }">
                   5
                 </div>
-                <div class="text-6-14 text-gray-2">Today's notes</div>
+                <div class="text-6-13 text-gray-2">Today's notes</div>
               </div>
             </div>
           </div>
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-invoice">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600" :style="{ color: '#686EF1' }">
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 dashboard-card-number" :style="{ color: '#686EF1' }">
                   5
                 </div>
-                <div class="text-6-14 text-gray-2">Decided cases</div>
+                <div class="text-6-13 text-gray-2">Decided cases</div>
               </div>
             </div>
           </div>
           <div class="input-container col-3 col-12-sm pa-20" style="min-width: 225px;">
             <div class="dashboard-card dashboard-service-charge">
-              <div style="width: 65px;">
-                icon
-              </div>
-              <div>
-                <div class="font-30 fw-600" :style="{ color: '#38D69A' }">
+              <!-- <div style="width: 60px;">
+                <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+              </div> -->
+              <div class="d-flex-v-center flex-column">
+                <div class="font-30 fw-600 dashboard-card-number" :style="{ color: '#38D69A' }">
                   5
                 </div>
-                <div class="text-6-14 text-gray-2">Abandoned cases</div>
+                <div class="text-6-13 text-gray-2">Abandoned cases</div>
               </div>
             </div>
           </div>
@@ -153,12 +155,11 @@ const route = useRoute();
     border-radius: 8px !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    height: 104px;
+    height: 110px;
     // width:258px;
-    display: flex;
+    // display: flex;
     cursor: pointer;
-    // justify-content: space-around;
-    align-items: center;
+    // align-items: center;
 
     &:hover {
       box-shadow: 0 0px 20px 0 rgb(0 0 0 / 20%);
@@ -166,6 +167,10 @@ const route = useRoute();
 
     @media (max-width:481px) {
       width: 100%;
+    }
+
+    &-number {
+      height: 50px;
     }
   }
 

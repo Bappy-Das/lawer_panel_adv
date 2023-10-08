@@ -6,7 +6,8 @@
         <div class="pannel--left-menubar-logo mb-15 mx-15">
           <router-link :to="{ name: 'dashboard' }">
             <!-- logo here -->
-            <img class="icon" :src="logo" alt="logo-icon" style="width:60px" />
+            <i class="fa-solid fa-scale-balanced text-primary" style="font-size: 30px"></i>
+            <!-- <img class="icon" :src="logo" alt="logo-icon" style="width:60px" /> -->
           </router-link>
         </div>
       </div>
