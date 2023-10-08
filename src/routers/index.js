@@ -45,6 +45,15 @@ const routes = [
         },
       },
       {
+        path: "/new_cases",
+        name: "newCase",
+        component: () => import("@/pages/cases/newCase.vue"),
+        meta: {
+          pageTitle: "New Casess",
+          // requiresAuth: true,
+        },
+      },
+      {
         path: "/running_cases",
         name: "runningCases",
         component: () => import("@/pages/cases/runningCase.vue"),

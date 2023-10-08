@@ -1,10 +1,6 @@
 <template>
   <PageLayout header="Settings Management" background="">
     <div class="input-group-container col-wrap">
-      <!-- <div class="input-container col-12  input-title">
-        <span class="">Settings management</span>
-        <hr class="settings-hr my-10" />
-      </div> -->
       <div class="input-container col-12-sm mt-10">
         <router-link :to="{ name: 'caseType' }">
           <div class="settings-card">
