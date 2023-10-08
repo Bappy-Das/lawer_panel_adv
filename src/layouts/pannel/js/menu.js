@@ -9,7 +9,7 @@ var menuData = [
   {
     name: "Daily Notes",
     routeName: "notes",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-book',
     items: [],
   },
   {
@@ -18,45 +18,47 @@ var menuData = [
   {
     name: "All cases",
     routeName: "allCases",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-scale-balanced',
     items: [],
   },
   {
     name: "Running cases",
     routeName: "runningCases",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-scale-unbalanced',
     items: [],
   },
   {
     name: "Today's cases",
     routeName: "todayCases",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-scale-unbalanced-flip',
     items: [],
   },
   {
     name: "Tomorrow's cases",
     routeName: "tomorrowCases",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-calendar-check',
     items: [],
   },
   {
     name: "Not updated cases",
     routeName: "notUpdatedCases",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-file-pen',
     items: [],
   },
   {
     name: "Decided cases",
     routeName: "decidedCases",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-handshake',
+    // icon: 'fa-solid fa-square-poll-horizontal',
     items: [],
   },
   {
     name: "Abandoned cases",
     routeName: "abandonedCases",
-    icon: 'fa-solid fa-chart-line',
+    icon: 'fa-solid fa-house-crack',
     items: [],
   },
+  // <i class="fa-solid fa-house-crack"></i>
   {
     headerText: "group"
   },
