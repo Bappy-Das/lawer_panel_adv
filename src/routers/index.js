@@ -117,85 +117,35 @@ const routes = [
           // requiresAuth: true
         },
       },
+      {
+        path: "/court",
+        name: "court",
+        component: () => import("@/pages/settings/settings.vue"),
+        meta: {
+          pageTitle: "Court",
+          // requiresAuth: true
+        },
+      },
+      {
+        path: "/case-type",
+        name: "caseType",
+        component: () => import("@/pages/settings/settings.vue"),
+        meta: {
+          pageTitle: "Case Type",
+          // requiresAuth: true
+        },
+      },
+      {
+        path: "/police-station",
+        name: "policeStation",
+        component: () => import("@/pages/settings/settings.vue"),
+        meta: {
+          pageTitle: "Police Station",
+          // requiresAuth: true
+        },
+      },
 
-      {
-        path: "/forecast",
-        name: "forecast",
-        component: () => import("@/pages/forecast/index.vue"),
-        meta: { pageTitle: "Forecast" },
-      },
-      {
-        path: '/button-component',
-        name: 'buttonComponent',
-        component: () => import('@/pages/components/Btn.vue'),
-        meta: { pageTitle: 'Button Component', }
-      },
-      {
-        path: '/modal-component',
-        name: 'modalComponent',
-        component: () => import('@/pages/components/Modal.vue'),
-        meta: { pageTitle: 'Modal Component', }
-      },
-      {
-        path: '/menu-component',
-        name: 'menuComponent',
-        component: () => import('@/pages/components/Menu.vue'),
-        meta: { pageTitle: 'Menu Component', }
-      },
-      {
-        path: '/input-box-component',
-        name: 'inputBoxComponent',
-        component: () => import('@/pages/components/InputBox.vue'),
-        meta: { pageTitle: 'Input Box Component', }
-      },
-      {
-        path: '/select-box-component',
-        name: 'selectBoxComponent',
-        component: () => import('@/pages/components/SelectBox.vue'),
-        meta: { pageTitle: 'Select Box Component', }
-      },
-      {
-        path: '/message-box-component',
-        name: 'LongTextBoxComponent',
-        component: () => import('@/pages/components/LongTextBox.vue'),
-        meta: { pageTitle: 'Message Box Component', }
-      },
-      {
-        path: '/check-box-component',
-        name: 'checkBoxComponent',
-        component: () => import('@/pages/components/CheckBox.vue'),
-        meta: { pageTitle: 'Check Box Component', }
-      },
-      {
-        path: '/radio-box-component',
-        name: 'radioBoxComponent',
-        component: () => import('@/pages/components/RadioBox.vue'),
-        meta: { pageTitle: 'Radio Box Component', }
-      },
-      {
-        path: '/file-upload-component',
-        name: 'fileUploadComponent',
-        component: () => import('@/pages/components/FileUpload.vue'),
-        meta: { pageTitle: 'File Upload Component' }
-      },
-      {
-        path: '/data-table-component',
-        name: 'dataTableComponent',
-        component: () => import('@/pages/components/DataTable.vue'),
-        meta: { pageTitle: 'Data Table Component', }
-      },
-      {
-        path: '/loader',
-        name: 'loader',
-        component: () => import('@/pages/components/Loader.vue'),
-        meta: { pageTitle: 'Loader Component', }
-      },
-      {
-        path: '/datepicker',
-        name: 'datepicker',
-        component: () => import('@/pages/components/DatePicker.vue'),
-        meta: { pageTitle: 'DatePicker Component', }
-      },
+
     ],
   },
 

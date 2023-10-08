@@ -1,87 +1,50 @@
 <template>
   <PageLayout header="Settings Management" background="">
     <div class="input-group-container col-wrap">
-      <div class="input-container col-12  input-title">
-        <span class="">Role management</span>
-        <hr class="settings-hr my-10" />
-      </div>
-      <div class="input-container col-12-sm mt-10">
-        <router-link :to="{ name: 'role' }">
-          <div class="settings-card">
-            <div class="settings-container text-gray-3 text-4-14">
-              <i class="fa-solid fa-users" style="font-size: 50px"></i>
-              <p class="mt-10 text-5-16">Role</p>
-            </div>
-          </div>
-        </router-link>
-      </div>
-      <div class="input-container col-12-sm mt-10">
-        <router-link :to="{ name: 'permissionGroup' }">
-          <div class="settings-card">
-            <div class="settings-container text-gray-3 text-4-14">
-              <i class="fa-solid fa-building-shield" style="font-size: 50px"></i>
-              <p class="mt-10 text-5-16">Permission Group</p>
-            </div>
-          </div>
-        </router-link>
-      </div>
-      <div class="input-container col-12-sm mt-10">
-        <router-link :to="{ name: 'permission' }">
-          <div class="settings-card">
-            <div class="settings-container text-gray-3 text-4-14">
-              <i class="fa-solid fa-user-shield" style="font-size: 50px"></i>
-              <p class="mt-10 text-5-16">Permission </p>
-            </div>
-          </div>
-        </router-link>
-      </div>
-
-
-    </div>
-    <div class="input-group-container col-wrap mt-40">
-      <div class="input-container col-12  input-title">
+      <!-- <div class="input-container col-12  input-title">
         <span class="">Settings management</span>
         <hr class="settings-hr my-10" />
+      </div> -->
+      <div class="input-container col-12-sm mt-10">
+        <!-- <router-link :to="{ name: 'department' }"> -->
+        <div class="settings-card">
+          <div class="settings-container text-gray-3 text-4-14">
+            <i class="fa-solid fa-layer-group" style="font-size: 50px"></i>
+            <p class="text-5-16 mt-10">Case Type Setup</p>
+          </div>
+        </div>
+        <!-- </router-link> -->
       </div>
       <div class="input-container col-12-sm mt-10">
-        <router-link :to="{ name: 'department' }">
-          <div class="settings-card">
-            <div class="settings-container text-gray-3 text-4-14">
-              <i class="fa-solid fa-layer-group" style="font-size: 50px"></i>
-              <p class="text-5-16 mt-10">Department</p>
-            </div>
+        <!-- <router-link :to="{ name: 'plans' }"> -->
+        <div class="settings-card">
+          <div class="settings-container text-gray-3 text-4-14">
+            <i class="fa-solid fa-warehouse" style="font-size: 50px"></i>
+            <!-- <i class="fa-solid fa-table-list" style="font-size: 50px"></i> -->
+            <p class="text-5-16 mt-10">Court Setup</p>
           </div>
-        </router-link>
+        </div>
+        <!-- </router-link> -->
       </div>
       <div class="input-container col-12-sm mt-10">
-        <router-link :to="{ name: 'plans' }">
-          <div class="settings-card">
-            <div class="settings-container text-gray-3 text-4-14">
-              <i class="fa-solid fa-table-list" style="font-size: 50px"></i>
-              <p class="text-5-16 mt-10">Plans</p>
-            </div>
+        <!-- <router-link :to="{ name: 'courierZone' }"> -->
+        <div class="settings-card">
+          <div class="settings-container text-gray-3 text-4-14">
+            <i class="fa-solid fa-building-shield" style="font-size: 50px"></i>
+            <p class="text-5-16 mt-10">Police Station</p>
           </div>
-        </router-link>
+        </div>
+        <!-- </router-link> -->
       </div>
       <div class="input-container col-12-sm mt-10">
-        <router-link :to="{ name: 'courierZone' }">
-          <div class="settings-card">
-            <div class="settings-container text-gray-3 text-4-14">
-              <i class="fa-solid fa-location-crosshairs" style="font-size: 50px"></i>
-              <p class="text-5-16 mt-10">Courier Zone</p>
-            </div>
+        <!-- <router-link :to="{ name: 'defultComplain' }"> -->
+        <div class="settings-card">
+          <div class="settings-container text-gray-3 text-4-14">
+            <i class="fa-solid fa-user-tie" style="font-size: 50px"></i>
+            <p class="text-5-16 mt-10">Add New Admin</p>
           </div>
-        </router-link>
-      </div>
-      <div class="input-container col-12-sm mt-10">
-        <router-link :to="{ name: 'defultComplain' }">
-          <div class="settings-card">
-            <div class="settings-container text-gray-3 text-4-14">
-              <i class="fa-solid fa-comment-dots" style="font-size: 50px"></i>
-              <p class="text-5-16 mt-10">Defult Complain</p>
-            </div>
-          </div>
-        </router-link>
+        </div>
+        <!-- </router-link> -->
       </div>
     </div>
   </PageLayout>

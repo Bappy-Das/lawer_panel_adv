@@ -5,8 +5,8 @@
       <div class="pannel--left-menubar-header">
         <div class="pannel--left-menubar-logo mb-15 mx-15">
           <router-link :to="{ name: 'dashboard' }">
-            logo here
-            <!-- <img class="icon" :src="black_bg_logo" alt="black_bg_logo-icon" /> -->
+            <!-- logo here -->
+            <img class="icon" :src="logo" alt="logo-icon" style="width:60px" />
           </router-link>
         </div>
       </div>
@@ -74,7 +74,7 @@ import { ref, reactive, onMounted, computed } from "vue";
 import { menuData } from "./js/menu.js";
 import { usePannelLayoutStore } from "@/store/layout/pannelLayout";
 import { useCommonStore } from "@/store/common/common";
-import black_bg_logo from "@/assets/image/black_bg_logo.svg";
+import logo from "@/assets/image/001cac7b-e040-4ddf-b241-27fde4876a39.jpeg";
 import LeftMenuSkeleton from "@/components/TableSkeleton/LeftMenuSkeleton.vue";
 
 
