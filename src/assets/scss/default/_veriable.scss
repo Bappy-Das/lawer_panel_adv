@@ -1,39 +1,38 @@
-$colorList:(
+$colorList: (
   //Theme colors
-  'primary':#F0BA1B,
-  'primary-lighter':#F0C547,
-  'primary-shade':#FFF9E8,
-  'secondary':#333333,
-  'secondary-shade':#E8E8E8,
-  'black':#1A160C,
-  'gray-1':#4A4945,
-  'gray-2':#666460,
-  'gray-3':#867979,
-  'gray-4':#C9B9B9,
-  'gray-5':#EAEAEA,
-  'gray-6':#79828D,
-  
-  'white':#FFFFFF,
-  'dim-white':#FFFFF5,
+  "primary": #f0ba1b,
+  "primary-lighter": #f0c547,
+  "primary-shade": #fff9e8,
+  "secondary": #333333,
+  "secondary-shade": #e8e8e8,
+  "black": #1a160c,
+  "gray-1": #4a4945,
+  "gray-2": #666460,
+  "gray-3": #867979,
+  "gray-4": #c9b9b9,
+  "gray-5": #eaeaea,
+  "gray-6": #79828d,
 
-  'info':#0090FF,
-  'info-lighter':#59AFF1,
-  'info-shade':#E6F4FF,
-  'success':#16C784,
-  'success-shade':#C0FEEE ,
-  'warning':#FFB84C,
-  'warning-shade':#FFF3E0,
-  'danger':#FF4646,
-  'danger-shade':#E8E8E8,
+  "white": #ffffff,
+  "dim-white": #fffff5,
 
-  'title':#2D405A,
+  "info": #0090ff,
+  "info-lighter": #59aff1,
+  "info-shade": #e6f4ff,
+  "success": #16c784,
+  "success-shade": #6bfdd9,
+  "warning": #ffb84c,
+  "warning-shade": #fff3e0,
+  "danger": #ff4646,
+  "danger-shade": #e8e8e8,
+
+  "title": #2d405a
 );
 
-
-$breakPoint:(
-  '-sm' : 576px,
-  '-md' : 768px,
-  '-lg' : 992px,
-  '-xlg' : 1200px,
-  '-xxlg': 1500px,
-); 
+$breakPoint: (
+  "-sm": 576px,
+  "-md": 768px,
+  "-lg": 992px,
+  "-xlg": 1200px,
+  "-xxlg": 1500px,
+);
