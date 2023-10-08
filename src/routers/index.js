@@ -118,27 +118,36 @@ const routes = [
         },
       },
       {
-        path: "/court",
-        name: "court",
-        component: () => import("@/pages/settings/settings.vue"),
-        meta: {
-          pageTitle: "Court",
-          // requiresAuth: true
-        },
-      },
-      {
         path: "/case-type",
         name: "caseType",
-        component: () => import("@/pages/settings/settings.vue"),
+        component: () => import("@/pages/settings/caseType/caseType.vue"),
         meta: {
           pageTitle: "Case Type",
           // requiresAuth: true
         },
       },
       {
+        path: "/court",
+        name: "court",
+        component: () => import("@/pages/settings/courtSetup/courtSetup.vue"),
+        meta: {
+          pageTitle: "Court",
+          // requiresAuth: true
+        },
+      },
+      {
         path: "/police-station",
         name: "policeStation",
-        component: () => import("@/pages/settings/settings.vue"),
+        component: () => import("@/pages/settings/policeStation/policeStation.vue"),
+        meta: {
+          pageTitle: "Police Station",
+          // requiresAuth: true
+        },
+      },
+      {
+        path: "/user",
+        name: "addAdminUser",
+        component: () => import("@/pages/settings/addAdminUser/addAdminUser.vue"),
         meta: {
           pageTitle: "Police Station",
           // requiresAuth: true

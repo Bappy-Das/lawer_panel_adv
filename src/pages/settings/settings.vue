@@ -6,45 +6,45 @@
         <hr class="settings-hr my-10" />
       </div> -->
       <div class="input-container col-12-sm mt-10">
-        <!-- <router-link :to="{ name: 'department' }"> -->
-        <div class="settings-card">
-          <div class="settings-container text-gray-3 text-4-14">
-            <i class="fa-solid fa-layer-group" style="font-size: 50px"></i>
-            <p class="text-5-16 mt-10">Case Type Setup</p>
+        <router-link :to="{ name: 'caseType' }">
+          <div class="settings-card">
+            <div class="settings-container text-gray-3 text-4-14">
+              <i class="fa-solid fa-layer-group" style="font-size: 50px"></i>
+              <p class="text-5-16 mt-10">Case Type Setup</p>
+            </div>
           </div>
-        </div>
-        <!-- </router-link> -->
+        </router-link>
       </div>
       <div class="input-container col-12-sm mt-10">
-        <!-- <router-link :to="{ name: 'plans' }"> -->
-        <div class="settings-card">
-          <div class="settings-container text-gray-3 text-4-14">
-            <i class="fa-solid fa-warehouse" style="font-size: 50px"></i>
-            <!-- <i class="fa-solid fa-table-list" style="font-size: 50px"></i> -->
-            <p class="text-5-16 mt-10">Court Setup</p>
+        <router-link :to="{ name: 'court' }">
+          <div class="settings-card">
+            <div class="settings-container text-gray-3 text-4-14">
+              <i class="fa-solid fa-warehouse" style="font-size: 50px"></i>
+              <!-- <i class="fa-solid fa-table-list" style="font-size: 50px"></i> -->
+              <p class="text-5-16 mt-10">Court Setup</p>
+            </div>
           </div>
-        </div>
-        <!-- </router-link> -->
+        </router-link>
       </div>
       <div class="input-container col-12-sm mt-10">
-        <!-- <router-link :to="{ name: 'courierZone' }"> -->
-        <div class="settings-card">
-          <div class="settings-container text-gray-3 text-4-14">
-            <i class="fa-solid fa-building-shield" style="font-size: 50px"></i>
-            <p class="text-5-16 mt-10">Police Station</p>
+        <router-link :to="{ name: 'policeStation' }">
+          <div class="settings-card">
+            <div class="settings-container text-gray-3 text-4-14">
+              <i class="fa-solid fa-building-shield" style="font-size: 50px"></i>
+              <p class="text-5-16 mt-10">Police Station</p>
+            </div>
           </div>
-        </div>
-        <!-- </router-link> -->
+        </router-link>
       </div>
       <div class="input-container col-12-sm mt-10">
-        <!-- <router-link :to="{ name: 'defultComplain' }"> -->
-        <div class="settings-card">
-          <div class="settings-container text-gray-3 text-4-14">
-            <i class="fa-solid fa-user-tie" style="font-size: 50px"></i>
-            <p class="text-5-16 mt-10">Add New Admin</p>
+        <router-link :to="{ name: 'addAdminUser' }">
+          <div class="settings-card">
+            <div class="settings-container text-gray-3 text-4-14">
+              <i class="fa-solid fa-user-tie" style="font-size: 50px"></i>
+              <p class="text-5-16 mt-10">Add New Admin</p>
+            </div>
           </div>
-        </div>
-        <!-- </router-link> -->
+        </router-link>
       </div>
     </div>
   </PageLayout>
