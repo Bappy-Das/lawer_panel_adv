@@ -136,6 +136,15 @@ const routes = [
         },
       },
       {
+        path: "/new-case-type",
+        name: "newCaseType",
+        component: () => import("@/pages/settings/caseType/newCaseType.vue"),
+        meta: {
+          pageTitle: "New Case Type",
+          // requiresAuth: true
+        },
+      },
+      {
         path: "/court",
         name: "court",
         component: () => import("@/pages/settings/courtSetup/courtSetup.vue"),
@@ -145,9 +154,27 @@ const routes = [
         },
       },
       {
+        path: "/new-court",
+        name: "newCourt",
+        component: () => import("@/pages/settings/courtSetup/newCourt.vue"),
+        meta: {
+          pageTitle: "Court",
+          // requiresAuth: true
+        },
+      },
+      {
         path: "/police-station",
         name: "policeStation",
         component: () => import("@/pages/settings/policeStation/policeStation.vue"),
+        meta: {
+          pageTitle: "Police Station",
+          // requiresAuth: true
+        },
+      },
+      {
+        path: "/new-police-station",
+        name: "newPoliceStation",
+        component: () => import("@/pages/settings/policeStation/newPoliceStation.vue"),
         meta: {
           pageTitle: "Police Station",
           // requiresAuth: true

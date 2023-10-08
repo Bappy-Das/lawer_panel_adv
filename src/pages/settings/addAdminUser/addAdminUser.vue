@@ -5,7 +5,7 @@
                 <Btn class="btn-success btn-squire-md mb-10">
                     <div class="d-flex-center-start">
                         <i class="fa-solid fa-plus"></i>
-                        <span class="text px-5">New Case</span>
+                        <span class="text px-5">New Admin User</span>
                     </div>
                 </Btn>
             </router-link>

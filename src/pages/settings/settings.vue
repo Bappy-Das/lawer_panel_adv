@@ -32,7 +32,7 @@
           </div>
         </router-link>
       </div>
-      <div class="input-container col-12-sm mt-10">
+      <!-- <div class="input-container col-12-sm mt-10">
         <router-link :to="{ name: 'addAdminUser' }">
           <div class="settings-card">
             <div class="settings-container text-gray-3 text-4-14">
@@ -41,7 +41,7 @@
             </div>
           </div>
         </router-link>
-      </div>
+      </div> -->
     </div>
   </PageLayout>
 </template>

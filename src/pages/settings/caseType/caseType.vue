@@ -1,7 +1,7 @@
 <template>
     <PageLayout header="Cases Type" subHeader="">
         <div class="deliveries-service-btn">
-            <router-link :to="{ name: 'newNote' }">
+            <router-link :to="{ name: 'newCaseType' }">
                 <Btn class="btn-success btn-squire-md mb-10">
                     <div class="d-flex-center-start">
                         <i class="fa-solid fa-plus"></i>
