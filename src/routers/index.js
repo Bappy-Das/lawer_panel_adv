@@ -27,6 +27,15 @@ const routes = [
         },
       },
       {
+        path: "/notes",
+        name: "newNote",
+        component: () => import("@/pages/notes/newNotes.vue"),
+        meta: {
+          pageTitle: "Dashboard",
+          requiresAuth: true,
+        },
+      },
+      {
         path: "/all_cases",
         name: "allCases",
         component: () => import("@/pages/notes/index.vue"),

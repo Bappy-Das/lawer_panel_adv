@@ -124,10 +124,6 @@ import loader from '@/components/loader/loader.vue'
 
 const route = useRoute();
 
-onBeforeUnmount(() => {
-  dashboard.reset();
-})
-
 
 </script>
 
