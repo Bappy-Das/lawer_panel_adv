@@ -1,12 +1,6 @@
 <template>
     <PageLayout header="All Cases" subHeader="">
         <div class="deliveries-service-btn">
-            <!-- <Btn class="btn-info mb-10" @click="exportDelivery()">
-                <div class="d-flex-center-start">
-                    <i class="fa-solid fa-download"></i>
-                    <span class="text px-5">Export</span>
-                </div>
-            </Btn> -->
             <router-link :to="{ name: 'newCase' }">
                 <Btn class="btn-success btn-squire-md mb-10">
                     <div class="d-flex-center-start">
