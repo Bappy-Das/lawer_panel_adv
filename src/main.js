@@ -5,7 +5,7 @@ window.axios = axios;
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './routers';
-import './pusherNotification';
+// import './pusherNotification';
 
 
 const vueSetup = createApp(App)
