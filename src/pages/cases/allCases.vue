@@ -1,5 +1,15 @@
 <template>
     <PageLayout header="All Cases" subHeader="">
+        <!-- <div class="deliveries-service-btn">
+            <router-link :to="{ name: 'newCase' }">
+                <Btn class="btn-success btn-squire-md mb-10">
+                    <div class="d-flex-center-start">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="text px-5">New Case</span>
+                    </div>
+                </Btn>
+            </router-link>
+        </div> -->
         <div class="deliveries-service-btn">
             <router-link :to="{ name: 'newCase' }">
                 <Btn class="btn-success btn-squire-md mb-10">
@@ -9,6 +19,30 @@
                     </div>
                 </Btn>
             </router-link>
+            <div class="flex-auto"></div>
+            <!-- <router-link :to="{ name: 'newDeliveries' }"> -->
+            <Btn class="btn-success btn-squire-md mr-10 mb-10">
+                <div class="d-flex-center-start">
+                    <i class="fa-regular fa-file-pdf"></i>
+                    <span class="text px-5">PDF as Visible</span>
+                </div>
+            </Btn>
+            <!-- </router-link> -->
+            <!-- <router-link :to="{ name: 'uploadCSVDocument' }"> -->
+            <Btn class="btn-warning btn-squire-md mr-10 mb-10">
+                <div class="d-flex-center-start">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span class="text px-5">PDF</span>
+                </div>
+            </Btn>
+            <!-- </router-link> -->
+            <Btn class="btn-info btn-squire-md mb-10">
+                <div class="d-flex-center-start">
+                    <i class="fa-solid fa-file-excel"></i>
+                    <span class="text px-5">Excel</span>
+                </div>
+            </Btn>
+
         </div>
         <hr class="hr-line" />
         <!---------------------Delivery Action  ------------------------------------------>
