@@ -1,4 +1,3 @@
-
 .text {
   vertical-align: middle;
   display: inline-block;
@@ -65,7 +64,6 @@
   height: 113px;
   width: 1px;
 }
-
 
 .card {
   padding: 10px;
@@ -191,10 +189,10 @@
   margin-right: 4px;
 }
 
-[type=date] { 
-    // background-color: var(--primary-shade);
-    height: 35px;
-    border-radius: 8px;
-    border-width: 1px;
-    padding: 18px;
+[type="date"] {
+  // background-color: var(--primary-shade);
+  height: 35px;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 18px;
 }
